@@ -35,7 +35,7 @@ session_start();
     3003 => 'Error in crystal data',
  );
  function connectDB(){
-    $mysqli = new mysqli("162.243.157.235", "mobile", "mobilegame2015", "MobileGame");
+    $mysqli = new mysqli("us-cdbr-azure-west-c.cloudapp.net", "badb7718ae55ff", "504ae830", "mobilegame");
     if ($mysqli->connect_errno) {
         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         error(1004);
