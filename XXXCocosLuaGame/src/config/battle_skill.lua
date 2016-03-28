@@ -25,8 +25,8 @@ local damage = 1001
 local SkillTable = {
 
     -- monster skills
-    [-10011] = monsterSkill({damage, 10}, nil, nil),
-    [-10021] = monsterSkill({damage, 30}, nil, nil),
+    [-10011] = monsterSkill({damage, 3}, nil, nil),
+    [-10021] = monsterSkill({damage, 10}, nil, nil),
     
 
 
@@ -43,7 +43,7 @@ local SkillTable = {
     [1009] = {skillID=1009,skillQuality=3,skillName='Fire Arrow',runeCostTable= {air=0,earth=0,water=0,fire=2},animationID = nil,particleID = nil,growthRatio = 1,CD = 2,effectTable ={effectID1=1005,effectValue1=50,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Advanced Fire Attack'},
     [1010] = {skillID=1010,skillQuality=1,skillName='Slash',runeCostTable= {air=2,earth=2,water=2,fire=2},animationID = nil,particleID = nil,growthRatio = 1,CD = 2,effectTable ={effectID1=1001,effectValue1=50,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Basic Slash Attack'},
     -- Heal skills
-    [1100] = {skillID=1100,skillQuality=4,skillName='Minor Heal',runeCostTable = {air=2,earth=0,water=0,fire=0},animationID = nil,particleID = nil,growthRatio = 1,CD = 5,effectTable={effectID1=1010,effectValue1=50,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Minor Healing'},
+    [1100] = {skillID=1100,skillQuality=4,skillName='Minor Heal',runeCostTable = {air=2,earth=0,water=0,fire=0},animationID = nil,particleID = nil,growthRatio = 1,CD = 5,effectTable={effectID1=1010,effectValue1=100,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Minor Healing'},
     [1101] = {skillID=1101,skillQuality=4,skillName='Major Heal',runeCostTable = {air=0,earth=0,water=5,fire=0},animationID = nil,particleID = nil,growthRatio = 1,CD = 7,effectTable={effectID1=1010,effectValue1=200,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Minor Healing'},
     -- Shell skills
     [1200] = {skillID=1200,skillQuality=4,skillName='Minor Shell',runeCostTable = {air=0,earth=3,water=0,fire=0},animationID = nil,particleID = nil,growthRatio = 1,CD = 30,effectTable={effectID1=1020,effectValue1= 120,effectID2=nil,effectValue2=nil,effectID3=nil,effectValue3=nil},skillSum='',skillDesc='Minor Shell'},

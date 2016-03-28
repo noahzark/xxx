@@ -167,7 +167,7 @@ function MonsterAILogic:onUpdateLevel2()
             ,cc.Spawn:create( cc.RotateBy:create(0.2 * speed,80):reverse(), cc.ScaleBy:create(0.2 * speed, 0.75, 0.75, 0.75):reverse())
             ,cc.Spawn:create( cc.RotateBy:create(0.3 * speed,-20), cc.ScaleBy:create(0.3 * speed, 1.75, 1.75, 1.75))
             ,cc.Blink:create(0.5 * speed,2)
-            ,cc.CallFunc:create(function() self.battleLogic:monsterUseSkill(monsterSkill({bleed, 4}, {bleed, 200}, nil)) end)
+            ,cc.CallFunc:create(function() self.battleLogic:monsterUseSkill(monsterSkill({bleed, 1}, {bleed, 200}, nil)) end)
             ,cc.Spawn:create( cc.RotateBy:create(0.2 * speed,-20):reverse(), cc.ScaleBy:create(0.2 * speed, 1.75, 1.75, 1.75):reverse())            
         ))
     elseif HP < 0.25 and self.recover > 0 then
